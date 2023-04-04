@@ -1,10 +1,10 @@
+import MeoArticle from '@/components/MeowArticle';
 import { getProducts } from '@/service/products';
 import Link from 'next/link';
 
-export const revalidate = 3;
-
 const ProductsPage = async () => {
   const products = await getProducts();
+
   return (
     <>
       <h1>About Products</h1>
@@ -15,6 +15,7 @@ const ProductsPage = async () => {
           </li>
         ))}
       </ul>
+      <MeoArticle />
     </>
   );
 };
