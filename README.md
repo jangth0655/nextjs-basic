@@ -49,6 +49,8 @@
     ⒉ 서버에서 실행되어 pre rendering된 HTML을 만들기 때문에, 브라우저에서 출력이 안된다.
     ⒊ 서버에서 실행되기 때문에 **브라우저 APIs를 사용 ❌**, but **Node APIs 사용 ✅**하다.
     ⒋ 따라서 상태관련된 것을 사용 불가 ❌ (useState, useEffect ...)
+  - app에서 route처리하기 (서버 api)
+  - loading UI, 병렬적 처리
 
 ---
 
