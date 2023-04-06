@@ -51,6 +51,7 @@
     ⒋ 따라서 상태관련된 것을 사용 불가 ❌ (useState, useEffect ...)
   - app에서 route처리하기 (서버 api)
   - loading UI, 병렬적 처리
+  - image 최적화 (nextjs - Image)
 
 ---
 
