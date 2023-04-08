@@ -1,5 +1,6 @@
+import GoProducts from '@/components/GoProducts';
 import { getProduct, getProducts } from '@/service/products';
-import { notFound } from 'next/navigation';
+import { notFound, redirect } from 'next/navigation';
 
 interface Props {
   params: {
@@ -18,11 +19,13 @@ export function generateMetadata({ params }: Props) {
 const ProductPage = async ({ params: { slug } }: Props) => {
   const product = await getProduct(slug);
   if (!product) {
-    notFound();
+    redirect('/products');
+    //notFound();
   }
   return (
     <>
       <h1>{product.name} One Product</h1>
+      <GoProducts />
     </>
   );
 };

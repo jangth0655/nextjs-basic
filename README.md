@@ -52,6 +52,8 @@
   - app에서 route처리하기 (서버 api)
   - loading UI, 병렬적 처리
   - image 최적화 (nextjs - Image)
+  - rewrite, redirect 사용 목적 및 방법 이해
+  - middleware
 
 ---
 
